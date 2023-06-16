@@ -1,0 +1,229 @@
+.dokter-profile {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.profile-image img {
+  border: 2px solid black;
+  padding: 5px;
+}
+
+.profile-image img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.profile-details {
+  margin-left: 16px;
+}
+
+.profile-heading {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.profile-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.02em;
+}
+
+.profile-specialty {
+  font-size: 16px;
+  color: #000000;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.02em;
+}
+
+.profile-description {
+  width: 200px;
+  background-color: #1890ff;
+  margin-left: auto;
+}
+
+.profile-line {
+  max-width: 100%;
+  width: 500px;
+  border: 1px solid #000000;
+  margin: 16px 0;
+  margin-top: 10px;
+}
+
+.profile-progress {
+  font-size: 18px;
+  color: #3570d2;
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.profile-progress svg {
+  font-size: 24px;
+  margin-right: 4px;
+}
+
+.profile-progress span {
+  display: flex;
+}
+
+.profile-dokter {
+  margin-top: 40px;
+}
+
+.profile-dokter h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.profile-dokter p {
+  font-size: 16px;
+  color: #000000;
+  margin-top: 8px;
+}
+
+.profile-section {
+  margin-top: 40px;
+}
+
+.profile-section h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.profile-section p {
+  font-size: 16px;
+  color: #000000;
+  margin-top: 8px;
+}
+
+.location-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.25));
+}
+
+.hospital-details {
+  display: flex;
+  align-items: center;
+}
+
+.hospital-image img {
+  width: 48px;
+  height: 48px;
+  margin-right: 16px;
+}
+
+.hospital-name {
+  font-size: 24px;
+  font-weight: 400;
+  color: #000000;
+  margin: 0;
+  text-align: center;
+}
+
+.schedule-details {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.schedule-item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 10px;
+}
+
+.schedule-day {
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #595959;
+  border-radius: 15px;
+  padding: 8px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.schedule-time-group {
+  display: flex;
+  align-items: center;
+  border: 1px solid #595959;
+  border-radius: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+}
+
+.schedule-time.start {
+  font-weight: bold;
+  font-size: 18px;
+  color: #000000;
+  margin-right: auto;
+}
+
+.schedule-time.end {
+  font-weight: bold;
+  font-size: 18px;
+  color: #000000;
+  margin-left: auto;
+}
+
+@media (max-width: 850px) {
+  .dokter-profile {
+    flex-direction: column;
+    align-items: center;
+  }
+  .profile-image {
+    margin-bottom: 16px;
+  }
+  .profile-details {
+    text-align: center;
+  }
+  .profile-specialty {
+    flex-direction: column;
+    align-items: center;
+  }
+  .profile-specialty span {
+    margin-bottom: 8px;
+  }
+  .profile-description {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 16px;
+  }
+  .profile-line {
+    width: 100%;
+    max-width: 100%;
+  }
+  .profile-progress {
+    justify-content: center;
+  }
+  .profile-dokter {
+    margin-top: 30px;
+  }
+  .profile-section {
+    margin-bottom: 30px;
+  }
+  .schedule-item {
+    max-width: 100%;
+  }
+}

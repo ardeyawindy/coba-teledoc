@@ -1,0 +1,55 @@
+:root {
+  --primary: #255ed6;
+  --light-blue: #1890ff;
+  --font: #252424;
+  --white: #fffffff5;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--white);
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  border-bottom: 1px solid var(--primary);
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.responsive-navbar-nav .nav-link {
+  color: var(--font);
+  display: inline-block;
+  font-size: 16px;
+  margin-right: 16px;
+}
+
+.responsive-navbar-nav .nav-link:hover {
+  color: var(--primary);
+}
+.responsive-navbar-nav .nav-link::after {
+  content: "";
+  display: block;
+  border-bottom: 1.6px solid var(--primary);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+.responsive-navbar-nav .nav-link:hover::after {
+  transform: scaleX(0.5);
+}
+.responsive-navbar-nav .active > .nav-link {
+  color: #007bff;
+}
+
+.responsive-navbar-nav .btn-outline-success {
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+.responsive-navbar-nav .btn-outline-success:hover {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+

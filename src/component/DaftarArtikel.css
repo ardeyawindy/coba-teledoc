@@ -1,0 +1,22 @@
+
+.topic-selection {
+  margin-top: 80px;
+}
+
+#otherArticles {
+  display: flex;
+  flex-wrap: wrap;
+}
+#otherArticles .card-title {
+  font-size: 16px;
+  line-height: 1.2;
+  height: 38px;
+  overflow: auto;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 576px) {
+  .card-image {
+    display: none;
+  }
+}
